@@ -17,6 +17,8 @@ public class PageViewCounterServlet extends HttpServlet {
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
 
+//        Logic: If "reset" something/anything the page count will revert to 0.
+//        Otherwise page count will continue to increment.
         if (reset != null){
             pageCount = 0;
         } else {
